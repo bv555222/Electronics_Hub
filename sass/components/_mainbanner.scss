@@ -1,0 +1,81 @@
+.testimonials-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent scrollbar from appearing */
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.5s ease; /* Add transition for smooth animation */
+
+  & > p {
+    font-size: 20px;
+  }
+
+  & > cite {
+    font-size: 18px;
+  }
+}
+
+.testimonial > img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Animation for moving left */
+@keyframes slideLeftIn {
+  from {
+    transform: translateX(100%); /* Start position outside of viewport */
+  }
+  to {
+    transform: translateX(0); /* End position at 0px */
+  }
+}
+
+@keyframes slideLeftOut {
+  from {
+    transform: translateX(0); /* Start position at 0px */
+  }
+  to {
+    transform: translateX(-100%); /* End position outside of viewport */
+  }
+}
+
+/* Apply animation to active testimonial */
+.testimonial.active {
+  display: block;
+  transform: translateX(0); /* Initially position testimonial at 0px */
+  animation: slideLeftIn 0.5s ease forwards;
+}
+
+/* Apply animation when exiting */
+.testimonial:not(.active) {
+  animation: slideLeftOut 0.5s ease forwards; /* Apply animation when exiting */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

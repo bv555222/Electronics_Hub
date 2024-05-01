@@ -1,0 +1,29 @@
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+//----------------------Animations-----------------
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-direction: 1s;
+  animation-direction: 1s;
+}
+.js--wp-4 {
+  -webkit-animation-direction: 1s;
+  animation-direction: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+}

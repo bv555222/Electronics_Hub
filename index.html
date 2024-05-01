@@ -3,13 +3,341 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Electronics HUB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+
+    <link rel="icon" href="images/favicon.ico.png" type="image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="ionicons-2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="nav"></nav>
-    <div class="header">
-      <div class="header_name">Welcome to Electronics HUB</div>
-    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="images/favicon.ico.png" alt="Logo" /></a>
+      </div>
+      <ul class="nav-links">
+        <li class="button"><a href="#products">Products</a></li>
+        <li class="button"><a href="#services">Services</a></li>
+        <li class="button"><a href="#">About Us</a></li>
+        <li class="button"><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="hero">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Electronics HUB</h1>
+          <p>Discover our wide range of quality electronic components</p>
+          <a href="#products" class="btn">OUR PRODUCTS</a>
+        </div>
+        <video autoplay muted loop id="video1">
+          <source src="Videos/Video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video muted loop id="video2">
+          <source src="Videos/Video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video muted loop id="video3">
+          <source src="Videos/Video3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section id="products" class="element">
+      <h2 class="products_head">Our Products</h2>
+      <span class="products_head__border"> </span>
+      <div class="products">
+        <div class="products_detail--1">
+          <img class="products_detail--img1" src="images/prod1.jpeg" />
+          <h3 class="products_detail--name1">Microcontroller 8051</h3>
+          <a href="" class="products_detail--more1"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <div class="products_detail--2">
+          <img class="products_detail--img2" src="images/prod2.jpeg" />
+          <h3 class="products_detail--name2">NVIDIA Jetson Nano</h3>
+          <a href="" class="products_detail--more2"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <div class="products_detail--3">
+          <img class="products_detail--img3" src="images/prod3.jpeg" />
+          <h3 class="products_detail--name3">PIC16F877A Development Board</h3>
+          <a href="" class="products_detail--more3"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <div class="products_detail--4">
+          <img class="products_detail--img4" src="images/prod4.jpeg" />
+          <h3 class="products_detail--name4">MSP430 LaunchPad</h3>
+          <a href="" class="products_detail--more4"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <div class="products_detail--5">
+          <img class="products_detail--img5" src="images/prod5.jpeg" />
+          <h3 class="products_detail--name5">ATmega328P Development Board</h3>
+          <a href="" class="products_detail--more5"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <div class="products_detail--6">
+          <img class="products_detail--img6" src="images/prod6.jpeg" />
+          <h3 class="products_detail--name6">ESP8266 Dev Kit V3</h3>
+          <a href="" class="products_detail--more6"> View more</a>
+          <a href="" class="products_detail--contact1"> contact Us</a>
+        </div>
+        <a href="" class="products_more"><h3>View all Products</h3></a>
+      </div>
+    </section>
+    <section id="features" class="features">
+      <div class="features_box features_1">
+        <i class="ion-ribbon-b"></i>
+        <p>High Quality products</p>
+      </div>
+      <div class="features_box features_2">
+        <i class="ion-happy"></i>
+        <p>Customer Satisfaction</p>
+      </div>
+      <div class="features_box features_3">
+        <i class="ion-cash"></i>
+        <p>Cost-effective</p>
+      </div>
+      <div class="features_box features_1">
+        <i class="ion-ios-timer"></i>
+        <p>Faster solution</p>
+      </div>
+    </section>
+    <section id="services">
+      <h2 class="services_head">Our Services</h2>
+      <span class="services_head__border"> </span>
+      <div class="row js--wp-1">
+        <div class="col span-1-of-4 box">
+          <ion-icon name="hardware-chip" class="icon-big"></ion-icon>
+
+          <h3>Embedded Hardware Design</h3>
+          <p>
+            esigning custom hardware solutions tailored to the specific
+            requirements of clients. This includes schematic design, PCB layout,
+            component selection, and prototyping.
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon name="code-slash" class="icon-big"></ion-icon>
+          <h3>Firmware Development</h3>
+          <p>
+            Developing embedded software to control the hardware and perform
+            various functions. This involves programming microcontrollers or
+            microprocessors using languages such as C/C++ or assembly language.
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <i class="ion-checkmark-circled icon-big"></i>
+          <h3>Prototyping and Testing</h3>
+          <p>
+            Building prototypes of embedded systems to validate designs and
+            ensure functionality. This includes testing hardware and software
+            components to identify and resolve issues before mass production.
+          </p>
+        </div>
+        <div class="col span-1-of-4 box">
+          <ion-icon name="construct" class="icon-big"></ion-icon>
+          <h3>Product Manufacturing</h3>
+          <p>
+            Providing manufacturing services to produce embedded systems in
+            small or large quantities. This may involve working with contract
+            manufacturers or establishing in-house production facilities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <!-- <h2 class="testimonials_head">Our Customers</h2>
+      <span class="testimonials_head__border"> </span> -->
+      <div class="testimonials">
+        <div class="testimonials-carousel">
+          <div class="testimonial active">
+            <img src="images/customer-1.jpg" alt="customer 1" />
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            <cite>- John Doe</cite>
+          </div>
+          <div class="testimonial">
+            <img src="images/customer-2.jpg" alt="customer 2" />
+            <p>
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua."
+            </p>
+            <cite>- Jane Smith</cite>
+          </div>
+          <div class="testimonial">
+            <img src="images/customer-3.jpg" alt="customer 3" />
+            <p>
+              "Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat."
+            </p>
+            <cite>- Alex Johnson</cite>
+          </div>
+          <ion-icon name="chevron-back" class="prev"></ion-icon>
+          <ion-icon name="chevron-forward" class="next"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <section class="section-form" id="contact">
+      <h2 class="contact_head">Contact Us</h2>
+      <span class="contact_head__border"> </span>
+      <div>
+        <form
+          method="post"
+          action="mailer.php"
+          class="contact-form"
+          target="_blank"
+        >
+          <div class="column col2">
+            <div class="row contact_details">
+              <div class="col span-1-of-3">
+                <ion-icon name="location" class="icon"></ion-icon>
+              </div>
+              <div class="col span-2-of-3">
+                <p class="icon_desc">
+                  #123,10th Cross Agrahara layout, yelahanka, Bangalore- 560064
+                </p>
+              </div>
+            </div>
+            <div class="row contact_details">
+              <div class="col span-1-of-3">
+                <ion-icon name="call" class="icon"></ion-icon>
+              </div>
+              <div class="col span-2-of-3">
+                <p class="icon_desc">+91 1234567891</p>
+              </div>
+            </div>
+            <div class="row contact_details">
+              <div class="col span-1-of-3">
+                <ion-icon name="mail" class="icon"></ion-icon>
+              </div>
+              <div class="col span-2-of-3">
+                <p class="icon_desc">xyz@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="row contact_details">
+              <div class="col span-1-of-3">
+                <ion-icon name="time" class="icon"></ion-icon>
+              </div>
+              <div class="col span-2-of-3">
+                <p class="icon_desc">9:00AM to 5:00PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <div class="col span-1-of-3">
+                <label for="find-us">Subject</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="col span-1-of-3">
+                <label>Message</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" placeholder="Your message"></textarea>
+              </div>
+
+              <div class="col span-2-of-3">
+                <input type="submit" value="Send" class="submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer_box">
+        <div class="col span-1-of-3 footer">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col span-2-of-3 footer">
+          <img src="images/Logo_footer.png" class="footer_logo" />
+        </div>
+        <div class="col span-3-of-3 footer">
+          <div class="social-links">
+            <ul>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="copy">
+          Copyrites &copy; 2024 by Electro HUB. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
